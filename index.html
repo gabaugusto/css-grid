@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<title> CSS Grid Flex </title>
+		<style>
+		
+			* {
+				font-family: "Arial";
+				text-align: center;
+			}
+			
+			.grid {      
+				display: grid;
+				grid-column-gap: 3px; /* space between columns */
+				grid-row-gap: 8px; /* space between rows */
+				width:80%;
+				font-size: 11px;
+				margin: 0 auto;
+			}		
+			
+			.grid-basic {      
+				grid-template-columns: 100px 200px 100px auto 100px; 
+				grid-template-rows:    50px 50px 50px 50px;  
+			}
+			
+			.grid-fractional {      
+				grid-template-rows: 1fr 3fr 5fr 7fr 9fr 7fr 5fr 3fr;
+				grid-template-columns: 1fr 3fr 5fr 7fr 9fr 7fr 5fr 3fr;
+			}	
+
+			.grid-page {      
+				grid-template-areas: 
+					'x y y y y'
+					'x center center center w'
+					'x center center center w'
+					'x z z z z';
+			}	
+			
+			.grid div {
+				background: #eee;
+				border: 1px solid #ddd;
+				padding: 1%;
+				margin: 0 1% 3px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>CSS Grid</h1>
+		<p>Phasellus iaculis elit at consectetur condimentum. In non ultrices felis, ac hendrerit risus. Nullam ac posuere massa. Nullam vitae erat porta, laoreet lacus quis, placerat nibh. Etiam et elementum ex, et accumsan tellus. Proin id porta lorem, et molestie risus. Donec a risus laoreet, facilisis leo quis, aliquet magna. Morbi id sem libero. Integer non euismod felis, mollis auctor leo. Sed leo mauris, semper vitae convallis vel, congue eu orci. Phasellus id erat posuere, pulvinar nisi id, ultricies lacus. Sed molestie ante vitae fringilla laoreet. Nam auctor sit amet est quis vehicula. Nunc enim ex, accumsan sit amet lobortis non, egestas at ante.</p>
+		
+	<h2>Grid Page</h2>
+		<div class="grid grid-page">
+			<div style="grid-area: x">Libero</div>
+			<div style="grid-area: y">Laoreet</div>
+			<div style="grid-area: z">Vitae</div>
+			<div style="grid-area: w">Sed</div>
+			<div style="grid-area: center">Ultricies</div>
+		</div>	
+		
+		<h2>Grid Basic</h2>
+		<div class="grid grid-basic">
+			<div class="item00">Xiento</div>
+			<div class="item01">Scelerisque </div>
+			<div class="item02">Condimentum </div>
+			<div class="item02">Condimentum </div>
+			<div class="item03">Libero</div>
+			<div class="item04">Magna</div>
+			<div class="item05">Phasellus</div>
+			<div class="item06">Scelerisque </div>
+			<div class="item07">Condimentum </div>
+			<div class="item08">Libero</div>
+			<div class="item09">Magna</div>
+			<div class="item10">Phasellus</div>
+			<div class="item11">Scelerisque </div>
+			<div class="item12">Condimentum </div>
+			<div class="item13">Libero</div>
+			<div class="item14">Magna</div>
+			<div class="item15">Phasellus</div>
+			<div class="item16">Scelerisque </div>
+			<div class="item17">Condimentum </div>
+			<div class="item18">Libero</div>
+			<div class="item19">Magna</div>
+			<div class="item20">Phasellus</div>
+			<div class="item21">Scelerisque </div>
+			<div class="item22">Condimentum </div>
+			<div class="item23">Libero</div>
+			<div class="item24">Magna</div>
+			<div class="item25">Phasellus</div>
+			<div class="item26">Scelerisque </div>
+			<div class="item27">Condimentum </div>
+			<div class="item28">Libero</div>
+			<div class="item29">Magna</div>
+			<div class="item30">Phasellus</div>
+			<div class="item31">Phasellus</div>
+			<div class="item32">Scelerisque </div>
+			<div class="item33">Condimentum </div>
+			<div class="item34">Libero</div>
+			<div class="item35">Magna</div>
+			<div class="item36">Phasellus</div>
+			<div class="item37">Scelerisque </div>
+			<div class="item38">Condimentum </div>
+			<div class="item39">Libero</div>
+			<div class="item40">Magna</div>
+			<div class="item41">Phasellus</div>
+			<div class="item42">Scelerisque </div>
+			<div class="item43">Condimentum </div>
+		</div>
+		
+		<h2>Grid Fractional</h2>
+		<div class="grid grid-fractional">
+			<div class="item00">Xiento</div>
+			<div class="item01">Scelerisque </div>
+			<div class="item02">Condimentum </div>
+			<div class="item02">Condimentum </div>
+			<div class="item03">Libero</div>
+			<div class="item04">Magna</div>
+			<div class="item05">Phasellus</div>
+			<div class="item06">Scelerisque </div>
+			<div class="item07">Condimentum </div>
+			<div class="item08">Libero</div>
+			<div class="item09">Magna</div>
+			<div class="item10">Phasellus</div>
+			<div class="item11">Scelerisque </div>
+			<div class="item12">Condimentum </div>
+			<div class="item13">Libero</div>
+			<div class="item14">Magna</div>
+			<div class="item15">Phasellus</div>
+			<div class="item16">Scelerisque </div>
+			<div class="item17">Condimentum </div>
+			<div class="item18">Libero</div>
+			<div class="item19">Magna</div>
+			<div class="item20">Phasellus</div>
+			<div class="item21">Scelerisque </div>
+			<div class="item22">Condimentum </div>
+			<div class="item23">Libero</div>
+			<div class="item24">Magna</div>
+			<div class="item25">Phasellus</div>
+			<div class="item26">Scelerisque </div>
+			<div class="item27">Condimentum </div>
+			<div class="item28">Libero</div>
+			<div class="item29">Magna</div>
+			<div class="item30">Phasellus</div>
+			<div class="item31">Phasellus</div>
+			<div class="item32">Scelerisque </div>
+			<div class="item33">Condimentum </div>
+			<div class="item34">Libero</div>
+			<div class="item35">Magna</div>
+			<div class="item36">Phasellus</div>
+			<div class="item37">Scelerisque </div>
+			<div class="item38">Condimentum </div>
+			<div class="item39">Libero</div>
+			<div class="item40">Magna</div>
+			<div class="item41">Phasellus</div>
+			<div class="item42">Scelerisque </div>
+			<div class="item43">Condimentum </div>
+			<div class="item44">Libero</div>
+			<div class="item45">Magna</div>	
+			<div class="item46">Libero</div>			
+		</div>	
+	</body>
+</html>
+
